@@ -6,7 +6,7 @@ Welcome to the Funds Backend Laravel application! This document provides instruc
 
 1. **Clone the Project:**
    ```bash
-   git clone git@github.com:andreurbanski/remotely-funds.git && cd remotely-funds
+   git clone git@github.com:andreurbanski/remotely-funds.git && cd remotely-funds && cp src/.env.example src/.env
    ```
 
 2. **Start the Docker Container:**

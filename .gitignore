@@ -1,5 +1,6 @@
 vendor
 src/vendor
+composer.lock
 node_modules/
 npm-debug.log
 yarn-error.log
@@ -22,3 +23,5 @@ Homestead.yaml
 Homestead.json
 /.vagrant
 .phpunit.result.cache
+./src/composer.lock
+composer.lock
