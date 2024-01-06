@@ -1,4 +1,3 @@
-```markdown
 # Funds Backend - Laravel Application
 
 Welcome to the Funds Backend Laravel application! This document provides instructions for setting up and running the application.
