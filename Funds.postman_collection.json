@@ -1,0 +1,438 @@
+{
+	"info": {
+		"_postman_id": "c6f8ba0c-8fdb-45c0-9a7c-2338cfb70c8e",
+		"name": "Funds",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6396071"
+	},
+	"item": [
+		{
+			"name": "Funds List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{funds_host}}/funds/list",
+					"host": [
+						"{{funds_host}}"
+					],
+					"path": [
+						"funds",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Funds Duplicated Funds",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{funds_host}}/funds/list-duplicated-funds",
+					"host": [
+						"{{funds_host}}"
+					],
+					"path": [
+						"funds",
+						"list-duplicated-funds"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Funds Show",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{funds_host}}/funds/show/9b038640-3e8a-40d3-9b05-dd339368dcb2",
+					"host": [
+						"{{funds_host}}"
+					],
+					"path": [
+						"funds",
+						"show",
+						"9b038640-3e8a-40d3-9b05-dd339368dcb2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Funds Store",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"Black Rock\",\n    \"start_year\" : \"1977\",\n    \"manager_id\" : \"9b038621-c4d9-4f6a-8a34-b3056c990377\",\n    \"aliases\" : [\"GTI\", \"AW\", \"Black Rock\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{funds_host}}/funds/store",
+					"host": [
+						"{{funds_host}}"
+					],
+					"path": [
+						"funds",
+						"store"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Funds Add Company",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"company_id\" : \"9b055680-d568-40b2-aa88-4e0c7fa1194a\",\n    \"fund_id\" : \"9b038640-3e8a-40d3-9b05-dd339368dcb2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{funds_host}}/funds/add-company",
+					"host": [
+						"{{funds_host}}"
+					],
+					"path": [
+						"funds",
+						"add-company"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Funds Remove Company",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{funds_host}}/funds/remove-company/9b038640-3e8a-40d3-9b05-dd339368dcb2/9b038606-9e47-4428-be1e-a5086ecefef6",
+					"host": [
+						"{{funds_host}}"
+					],
+					"path": [
+						"funds",
+						"remove-company",
+						"9b038640-3e8a-40d3-9b05-dd339368dcb2",
+						"9b038606-9e47-4428-be1e-a5086ecefef6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Funds Destroy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{funds_host}}/funds/destroy/9b038640-3e8a-40d3-9b05-dd339368dcb2",
+					"host": [
+						"{{funds_host}}"
+					],
+					"path": [
+						"funds",
+						"destroy",
+						"9b038640-3e8a-40d3-9b05-dd339368dcb2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Funds Update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"aliases\" : [\"oa\", \"ao\", \"test\", \"BLA\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{funds_host}}/funds/update/9b03876e-74e1-4bc2-8f9f-93a4385c3355",
+					"host": [
+						"{{funds_host}}"
+					],
+					"path": [
+						"funds",
+						"update",
+						"9b03876e-74e1-4bc2-8f9f-93a4385c3355"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Manager Show",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{funds_host}}/managers/show/9b05919b-a758-496e-be83-ea59937d5dea",
+					"host": [
+						"{{funds_host}}"
+					],
+					"path": [
+						"managers",
+						"show",
+						"9b05919b-a758-496e-be83-ea59937d5dea"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Manager Store",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"JOHN DOE\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{funds_host}}/managers/store",
+					"host": [
+						"{{funds_host}}"
+					],
+					"path": [
+						"managers",
+						"store"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Manager  Destroy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{funds_host}}/managers/destroy/9b038621-c4d9-4f6a-8a34-b3056c990377",
+					"host": [
+						"{{funds_host}}"
+					],
+					"path": [
+						"managers",
+						"destroy",
+						"9b038621-c4d9-4f6a-8a34-b3056c990377"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Manager List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{funds_host}}/managers/list",
+					"host": [
+						"{{funds_host}}"
+					],
+					"path": [
+						"managers",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Manager Update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"JOHN DOESNT\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{funds_host}}/managers/update/9b05919b-a758-496e-be83-ea59937d5dea",
+					"host": [
+						"{{funds_host}}"
+					],
+					"path": [
+						"managers",
+						"update",
+						"9b05919b-a758-496e-be83-ea59937d5dea"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Company  Show",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{funds_host}}/companies/show/9b059351-6e37-496f-867c-06a9cb19f19f",
+					"host": [
+						"{{funds_host}}"
+					],
+					"path": [
+						"companies",
+						"show",
+						"9b059351-6e37-496f-867c-06a9cb19f19f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Company  Update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"SUN MICROSYSTEMS\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{funds_host}}/companies/update/9b059351-6e37-496f-867c-06a9cb19f19f",
+					"host": [
+						"{{funds_host}}"
+					],
+					"path": [
+						"companies",
+						"update",
+						"9b059351-6e37-496f-867c-06a9cb19f19f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Company Store",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"MICROSOFT\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{funds_host}}/companies/store",
+					"host": [
+						"{{funds_host}}"
+					],
+					"path": [
+						"companies",
+						"store"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Company  Destroy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{funds_host}}/companies/destroy/9b059351-6e37-496f-867c-06a9cb19f193",
+					"host": [
+						"{{funds_host}}"
+					],
+					"path": [
+						"companies",
+						"destroy",
+						"9b059351-6e37-496f-867c-06a9cb19f193"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Company List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{funds_host}}/companies/list",
+					"host": [
+						"{{funds_host}}"
+					],
+					"path": [
+						"companies",
+						"list"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
