@@ -34,8 +34,8 @@ Welcome to the Funds Backend Laravel application! This document provides instruc
    Execute this command to create the initial database and run migrations.
 
 6. **Use the application endpoints**
-There is a .collection.json file containing a Postman collection with all the application enpoints and examples of use.
-You just need to import it into Postman, set the {{funds_host}} variable to http://127.0.0.1:7777/api
+    There is a .collection.json file containing a Postman collection with all the application enpoints and examples of use.
+    You just need to import it into Postman, set the {{funds_host}} variable to http://127.0.0.1:7777/api
 
 ## Additional Commands
 
