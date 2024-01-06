@@ -1,5 +1,3 @@
-Certainly! Below is a template for your `readme.md` file for a Laravel application called `funds-backend`. Make sure to customize it further based on your specific application details.
-
 ```markdown
 # Funds Backend - Laravel Application
 
