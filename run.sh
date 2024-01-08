@@ -75,7 +75,7 @@ case $command in
         create_database_command
         ;;
     *)
-        echo "Invalid command. Usage: $0 <test|start|queue|create
+        echo "Invalid command. Usage: $0 <test|start|queue|create>"
         exit 1
         ;;
 esac

@@ -62,6 +62,18 @@ Welcome to the Funds Backend Laravel application! This document provides instruc
 
 Make sure to configure the necessary environment variables in the `.env` file or `.env.example` based on your project requirements.
 
+## System Usage
+
+ 
+ To start using this application you car import the Postman collection into your local Postman instalation containing all the available Endpoints with examples of usage. Remember to update the UUIDs during the creation of the relations.
+
+ You must define the entities on the following order:
+ 1. Company
+ 2. Manager
+ 3. Fund
+
+ At the queue for duplicated Funds, you can observe it working by creating multiple funds with either "name" or "alias" entry duplicated. The system will perform a Intersection and once found will start the Queue that you write into the file "/app/storage/logs/duplication.log" all intersected items.
+
 ## Contributors
 
 - [Andre Urbanski](https://github.com/andreurbanski)
